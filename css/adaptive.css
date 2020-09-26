@@ -1,0 +1,36 @@
+@media screen and (max-width: 1124px) {
+    #block-items {
+        position: relative;
+    }
+    .block-item {
+        margin-right: 0;
+    }
+    .block-item:first-child {
+        position: absolute;
+        top: 100px;
+        left: 2%;
+    }
+    .block-item:last-child {
+        position: absolute;
+        top: 100px;
+        right: 2%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #block-items {
+        position: static;
+        flex-wrap: wrap;
+    }
+    .block-item-form {
+        margin: 0 auto 16px auto;
+    }
+    .block-item {
+        width: 623px;
+    }
+    .block-item:first-child {
+        position: static;
+    }
+    .block-item:last-child {
+        position: static;
+    }
+}

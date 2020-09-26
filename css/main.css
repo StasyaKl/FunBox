@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Exo2.0-Thin";
+    src: url("../fonts/Exo2.0-Thin.otf");
+}
+@font-face {
+    font-family: "TrebuchetMSRegular";
+    src: url("../fonts/TrebuchetMSRegular.ttf");
+}
+@font-face {
+    font-family: "TrebuchetMSBold";
+    src: url("../fonts/TrebuchetMSBold.ttf");
+}
+body {
+    margin: 0;
+    background-image: url("../images/Pattern.png");
+    background-size: cover;
+}
+h2 {
+    font-size: 36px;
+    font-family: "Exo2.0-Thin", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
+    margin-bottom: 23px;
+    margin-top: 0;
+}
+#block-items {
+    display: flex;
+    justify-content: center;
+}
+.block-item {
+    margin-right: 80px;
+    width: 312px;
+}
+.block-item:last-child {
+    margin-right: 0;
+}
+.block-item-form {
+    background-image: url("../images/Back.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 312px;
+    height: 472px;
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 16px;
+}
+.block-item-form:hover {
+    cursor: pointer;
+}
+.block-item-card {
+    padding: 25px 54px 0 48px;
+}
+.block-item-text {
+    font-size: 16px;
+    font-family: "TrebuchetMSRegular", sans-serif;
+    color: rgb(102, 102, 102);
+}
+.title {
+    margin: 8px 0 12px 0;
+}
+.block-item-title {
+    font-size: 48px;
+    font-family: "TrebuchetMSBold", sans-serif;
+    color: rgb(0, 0, 0);
+}
+.block-item-title-span {
+    font-size: 24px;
+    font-family: "TrebuchetMSBold", sans-serif;
+    color: rgb(0, 0, 0);
+}
+.feature {
+    font-size: 14px;
+    font-family: "TrebuchetMSRegular", sans-serif;
+    color: rgb(102, 102, 102);
+}
+.feature span {
+    font-family: "TrebuchetMSBold", sans-serif;
+}
+.weight {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(22, 152, 217);
+    width: 81px;
+    height: 81px;
+    font-size: 42px;
+    font-family: "TrebuchetMSRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    bottom: 16px;
+    right: 16px;
+    line-height: 22pt;
+    padding: 16px 0 12px 0;
+    box-sizing: border-box;
+}
+.weight span {
+    font-size: 24px;
+}
+.block-item-form:hover .weight {
+    background-color: rgb(46, 168, 230);
+}
+.block-item-block {
+    font-size: 13px;
+    font-family: "TrebuchetMSRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
+    text-align: center;
+}
+.block-item-block span {
+    color: #1698d9;
+    border-bottom: 1px dashed #1698d9;
+}
+.block-item-block span:hover {
+    color: rgb(46, 168, 230);
+    cursor: pointer;
+}
