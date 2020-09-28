@@ -15,6 +15,9 @@ body {
     background-image: url("../images/Pattern.png");
     background-size: cover;
 }
+#block {
+    padding: 30px 0;
+}
 h2 {
     font-size: 36px;
     font-family: "Exo2.0-Thin", sans-serif;
@@ -30,7 +33,7 @@ h2 {
 }
 .block-item {
     margin-right: 80px;
-    width: 312px;
+    width: 313px;
 }
 .block-item:last-child {
     margin-right: 0;
@@ -39,11 +42,17 @@ h2 {
     background-image: url("../images/Back.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 312px;
+    width: 313px;
     height: 472px;
     position: relative;
     margin-right: 0;
     margin-bottom: 16px;
+}
+.block-item-form.active {
+    background-image: url("../images/Pink.png");
+}
+.block-item-form.disabled {
+    background-image: url("../images/Gray.png");
 }
 .block-item-form:hover {
     cursor: pointer;
@@ -58,21 +67,22 @@ h2 {
 }
 .title {
     margin: 8px 0 12px 0;
+    color: rgb(0, 0, 0);
 }
 .block-item-title {
     font-size: 48px;
     font-family: "TrebuchetMSBold", sans-serif;
-    color: rgb(0, 0, 0);
 }
 .block-item-title-span {
     font-size: 24px;
     font-family: "TrebuchetMSBold", sans-serif;
-    color: rgb(0, 0, 0);
+}
+.features {
+    color: rgb(102, 102, 102);
 }
 .feature {
     font-size: 14px;
     font-family: "TrebuchetMSRegular", sans-serif;
-    color: rgb(102, 102, 102);
 }
 .feature span {
     font-family: "TrebuchetMSBold", sans-serif;
@@ -92,6 +102,18 @@ h2 {
     line-height: 22pt;
     padding: 16px 0 12px 0;
     box-sizing: border-box;
+}
+.weight.active {
+    background-color: #d91667;
+}
+.block-item-form:hover .weight.active {
+    background-color: #e52e7a;
+}
+.weight.disabled {
+    background-color: #b3b3b3;
+}
+.block-item-form:hover .weight.disabled {
+    background-color: #b3b3b3;
 }
 .weight span {
     font-size: 24px;
@@ -113,4 +135,26 @@ h2 {
 .block-item-block span:hover {
     color: rgb(46, 168, 230);
     cursor: pointer;
+}
+.block-item-select {
+    display: none;
+    font-size: 13px;
+    font-family: "TrebuchetMSRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
+    text-align: center;
+}
+.block-item-disabled {
+    display: none;
+    font-size: 13px;
+    font-family: "TrebuchetMSRegular", sans-serif;
+    color: rgb(255, 255, 102);
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
+}
+.block-item-text-select {
+    display: none;
+    font-size: 16px;
+    font-family: "TrebuchetMSRegular", sans-serif;
+    color: rgb(230, 46, 122);
 }
