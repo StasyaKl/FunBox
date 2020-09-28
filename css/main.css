@@ -34,9 +34,11 @@ h2 {
 .block-item {
     margin-right: 80px;
     width: 313px;
+    margin-bottom: 30px;
 }
 .block-item:last-child {
     margin-right: 0;
+    margin-bottom: 0;
 }
 .block-item-form {
     background-image: url("../images/Back.png");

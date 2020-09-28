@@ -1,6 +1,6 @@
 $(document).ready(() => {
     $(".block-item").on("click", function () {
-        if(!this.classList.contains('disabled')) {
+        if(!$(this).hasClass('disabled')) {
             $(this).children('.block-item-form').toggleClass('active');
             $(this).children('.block-item-form').children('.block-item-card').children('.weight').toggleClass('active');
             $(this).children('.block-item-block').hide();
@@ -13,6 +13,9 @@ $(document).ready(() => {
             $(this).children('.block-item-select').hide();
             $(this).children('.block-item-form').children('.block-item-card').children('.block-item-text').show();
             $(this).children('.block-item-form').children('.block-item-card').children('.block-item-text-select').hide();
+        }
+        if($(this).hasClass('disabled')) {
+            $(this).children('.block-item-block').hide();
         }
     });
 
